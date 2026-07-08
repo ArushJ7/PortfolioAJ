@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Arush Jain - Personal Portfolio. B.Tech Computer Science student and Full-Stack Developer building modern, responsive, and high-performance web applications.">
+  <title>Arush Jain | Portfolio</title>
+
+  <!-- Typography: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+  <!-- Glow Backdrops (Decorative) -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-dot"></span> Arush Jain
+      </a>
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About &amp; Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle light/dark theme" class="theme-btn">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About &amp; Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">Open for Internships</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Arush Jain</span>
+          </h1>
+          <h2 class="hero-subtitle">CS Student &amp; Web Developer</h2>
+          <p class="hero-description">
+            A motivated B.Tech Computer Science student specializing in building responsive, modern, and interactive web
+            applications. Interested in algorithm analysis, problem-solving, and clean UI engineering.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              View My Projects <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Get in Touch <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="image-border-glow"></div>
+          <div class="hero-image-card">
+            <img src="assets/profile.jpg" alt="Arush Jain Profile Photo" class="hero-profile-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">Education &amp; Skills</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <div class="bio-block">
+              <h3 class="bio-title"><i data-lucide="user" class="bio-icon"></i> Career Objective</h3>
+              <p>
+                Motivated B.Tech student seeking internship opportunities to apply programming and web development
+                skills in real-world projects. Interested in problem solving, building applications, and continuously
+                learning new technologies.
+              </p>
+            </div>
+
+            <div class="bio-block">
+              <h3 class="bio-title"><i data-lucide="graduation-cap" class="bio-icon"></i> Education</h3>
+              <div class="education-card">
+                <span class="edu-duration">2024 – 2028</span>
+                <h4 class="edu-degree">Bachelor of Technology (B.Tech)</h4>
+                <p class="edu-field">Computer Science Engineering (CSE)</p>
+                <p class="edu-institution">Dr. Akhilesh Das Gupta Institute of Professional Studies (ADGIPS), Delhi</p>
+              </div>
+            </div>
+
+            <div class="social-pills">
+              <a href="https://github.com/ArushJ7" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <i data-lucide="github"></i> GitHub
+              </a>
+              <a href="https://linkedin.com/in/arush-jain-661446370" target="_blank" rel="noopener noreferrer"
+                class="social-pill">
+                <i data-lucide="linkedin"></i> LinkedIn
+              </a>
+              <a href="mailto:jainarush.aj7@gmail.com" class="social-pill">
+                <i data-lucide="mail"></i> Email
+              </a>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <h3 class="skills-title">Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon-wrapper react-color">
+                  <i data-lucide="code-2"></i>
+                </div>
+                <h4 class="skill-name">Programming</h4>
+                <p class="skill-desc">C++, JavaScript, Java (Basic), Python</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-wrapper js-color">
+                  <i data-lucide="globe"></i>
+                </div>
+                <h4 class="skill-name">Web Development</h4>
+                <p class="skill-desc">HTML, CSS, Bootstrap, Full Stack (MERN)</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-wrapper ai-color">
+                  <i data-lucide="binary"></i>
+                </div>
+                <h4 class="skill-name">DSA</h4>
+                <p class="skill-desc">Data Structures, Algorithms, Problem Solving</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-wrapper backend-color">
+                  <i data-lucide="database"></i>
+                </div>
+                <h4 class="skill-name">Database</h4>
+                <p class="skill-desc">SQL, Relational DBMS Concepts</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-wrapper tools-color">
+                  <i data-lucide="git-branch"></i>
+                </div>
+                <h4 class="skill-name">Tools</h4>
+                <p class="skill-desc">GitHub, VS Code</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-wrapper tailwind-color">
+                  <i data-lucide="users"></i>
+                </div>
+                <h4 class="skill-name">Soft Skills</h4>
+                <p class="skill-desc">Teamwork, Time Management, Logical Thinking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">My Projects</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Guardian AI -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/guardian_ai_preview.png" alt="Guardian AI Interface Mockup" class="project-image">
+              <div class="project-overlay">
+                <a href="https://github.com/tusharpawar1241/SHAPA" target="_blank" rel="noopener noreferrer"
+                  class="project-overlay-link">
+                  View Repository <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Gemini AI</span>
+                <span class="tag">Group Project</span>
+              </div>
+              <h3 class="project-title">Guardian AI — Safety Assistant</h3>
+              <p class="project-description">
+                A collaborative group project building a high-performance health assistant that evaluates product
+                ingredients in real-time. Leverages Gemini AI to identify harmful additives and matches them against
+                custom profiles.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/tusharpawar1241/SHAPA" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align: middle; margin-right: 4px;">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg> Code Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Portfolio Website -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <div class="project-css-image portfolio-visual-bg">
+                <div class="css-mockup-circle"></div>
+                <div class="css-mockup-line w-1"></div>
+                <div class="css-mockup-line w-2"></div>
+                <div class="css-mockup-line w-3"></div>
+                <div class="css-mockup-icon"><i data-lucide="layout"></i></div>
+              </div>
+              <div class="project-overlay">
+                <a href="https://github.com/ArushJ7/PortfolioAJ" target="_blank" rel="noopener noreferrer"
+                  class="project-overlay-link">
+                  View Repository <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <h3 class="project-title">Personal Portfolio</h3>
+              <p class="project-description">
+                Built a responsive personal portfolio website to showcase project galleries, B.Tech education timeline,
+                technical skill cards, and a styled functional contact interface.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/ArushJ7/PortfolioAJ" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align: middle; margin-right: 4px;">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg> Code Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: BMI Calculator -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <div class="project-css-image bmi-visual-bg">
+                <div class="css-mockup-circle"></div>
+                <div class="css-mockup-line w-2"></div>
+                <div class="css-mockup-line w-3"></div>
+                <div class="css-mockup-icon"><i data-lucide="activity"></i></div>
+              </div>
+              <div class="project-overlay">
+                <a href="https://github.com/ArushJ7/BMI_calculator" target="_blank" rel="noopener noreferrer"
+                  class="project-overlay-link">
+                  View Repository <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <h3 class="project-title">BMI Calculator</h3>
+              <p class="project-description">
+                Calculates Body Mass Index (BMI) using user input variables and conditions, providing helpful health
+                categorization feedback.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/ArushJ7/BMI_calculator" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align: middle; margin-right: 4px;">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg> Code Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Password Generator -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <div class="project-css-image password-visual-bg">
+                <div class="css-mockup-circle"></div>
+                <div class="css-mockup-line w-1"></div>
+                <div class="css-mockup-line w-2"></div>
+                <div class="css-mockup-icon"><i data-lucide="key-round"></i></div>
+              </div>
+              <div class="project-overlay">
+                <a href="https://github.com/ArushJ7/Password_Generator" target="_blank" rel="noopener noreferrer"
+                  class="project-overlay-link">
+                  View Repository <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Password Generator</h3>
+              <p class="project-description">
+                A security utility generating highly randomized, customizable, and secure passwords based on user
+                parameters (length, symbols, numbers).
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/ArushJ7/Password_Generator" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align: middle; margin-right: 4px;">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg> Code Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: QR Code Generator -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <div class="project-css-image qrcode-visual-bg">
+                <div class="css-mockup-circle"></div>
+                <div class="css-mockup-line w-2"></div>
+                <div class="css-mockup-line w-3"></div>
+                <div class="css-mockup-icon"><i data-lucide="qr-code"></i></div>
+              </div>
+              <div class="project-overlay">
+                <a href="https://github.com/ArushJ7/QR_Code_Generator" target="_blank" rel="noopener noreferrer"
+                  class="project-overlay-link">
+                  View Repository <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">QR Code Generator</h3>
+              <p class="project-description">
+                Generates instant, high-quality QR codes for URLs or text details with real-time conversion and download
+                options.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/ArushJ7/QR_Code_Generator" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    style="vertical-align: middle; margin-right: 4px;">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg> Code Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="contact-cards-grid">
+          <div class="contact-card-item">
+            <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+            <h3 class="contact-card-title">Email</h3>
+            <a href="mailto:jainarush.aj7@gmail.com" class="contact-card-val">jainarush.aj7@gmail.com</a>
+            <p class="contact-card-desc">Reach out directly via email for any collaborations, job openings, or general
+              inquiries.</p>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-card-icon"><i data-lucide="phone"></i></div>
+            <h3 class="contact-card-title">Phone</h3>
+            <a href="tel:+917982732851" class="contact-card-val">+91 7982732851</a>
+            <p class="contact-card-desc">Available for phone calls or messages during business hours.</p>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-card-icon"><i data-lucide="map-pin"></i></div>
+            <h3 class="contact-card-title">Location</h3>
+            <span class="contact-card-val text-static">Delhi, India</span>
+            <p class="contact-card-desc">Open to roles in Delhi NCR or remote opportunities worldwide.</p>
+          </div>
+        </div>
+
+        <div class="contact-socials-wrapper">
+          <h3 class="socials-title">Find Me Online</h3>
+          <div class="social-links-row">
+            <a href="https://github.com/ArushJ7" target="_blank" rel="noopener noreferrer" class="social-link-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: middle; margin-right: 8px;" class="lucide lucide-github">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg> GitHub
+            </a>
+            <a href="https://linkedin.com/in/arush-jain-661446370" target="_blank" rel="noopener noreferrer"
+              class="social-link-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: middle; margin-right: 8px;" class="lucide lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Arush Jain. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/ArushJ7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-github">
+            <path
+              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+            </path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/arush-jain-661446370" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-linkedin">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect width="4" height="12" x="2" y="9"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:jainarush.aj7@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-mail">
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
